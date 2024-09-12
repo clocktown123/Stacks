@@ -1,0 +1,26 @@
+#include<stack>
+#include<iostream>
+using namespace std;
+
+int main() {
+
+	stack <int> myStack; // set up an interger stacks
+	myStack.push(15); // push a bunch of numbers into the stack
+	myStack.push(40);
+	myStack.push(2);
+	myStack.push(80);
+	myStack.push(4);
+
+	cout << "The stack's size is : " << myStack.size() << endl;
+	cout << "it's top is : " << myStack.top() << endl << endl;
+
+	cout << "Popping the stack elements: ";
+	while (!myStack.empty()) {
+		cout << myStack.top() << " , ";
+		myStack.pop();
+
+	}
+	cout << endl << endl;
+
+	cout << "it's size is now: " << myStack.size() << endl;
+}
